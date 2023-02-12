@@ -1,0 +1,19 @@
+.header {
+  @apply w-full h-28 flex justify-between items-center;
+
+  .logo {
+    @apply relative w-12 h-12 bg-white text-zinc-900 text-2xl rounded-full mr-auto;
+
+    &::after {
+      content: 'Y';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.nav {
+  @apply flex gap-12 items-center ml-auto;
+}

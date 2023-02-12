@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-900 m-0 p-0 text-white;
+}
+
+a {
+  @apply transition-colors duration-200;
+  @apply hover:text-gray-400 hover:underline hover:underline-offset-8;
+
+  &[aria-current='page'] {
+    @apply text-white underline underline-offset-8;
+  }
+}
