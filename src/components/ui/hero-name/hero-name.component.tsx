@@ -5,7 +5,7 @@ import ProfilePhoto from '/profile.jpeg';
 
 const HeroName: React.FC = () => {
   return (
-    <div className='hero-name-container'>
+    <div className='hero-name-container mt-6'>
       <img src={NameLight} alt='' className='hero-name-item' />
 
       <div
