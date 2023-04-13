@@ -8,29 +8,35 @@ const Header: React.FC = () => {
       title: 'Home',
     },
     {
-      path: '/journey',
+      path: '',
       title: 'Journey',
     },
     {
-      path: '/blog',
+      path: '',
       title: 'Blog',
     },
   ];
 
   return (
-    <div className='header'>
-      <div className='logo'></div>
+    <div className="header">
+      <div className="logo"></div>
 
-      <nav className='nav'>
-        {routes.map((route, index) => (
-          <NavLink
-            to={route.path}
-            className={({ isActive }) => (isActive ? 'active' : '')}
-            key={index}
-          >
-            {route.title}
-          </NavLink>
-        ))}
+      <nav className="nav">
+        {routes.map((route, index) =>
+          route.path !== '' ? (
+            <NavLink
+              to={route.path}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              key={index}
+            >
+              {route.title}
+            </NavLink>
+          ) : (
+            <a key={route.title} className="link-disabled">
+              {route.title}
+            </a>
+          ),
+        )}
       </nav>
     </div>
   );

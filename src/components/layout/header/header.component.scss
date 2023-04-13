@@ -20,6 +20,10 @@
   @apply flex gap-12 items-center ml-auto;
 }
 
+.link-disabled {
+  @apply cursor-not-allowed;
+}
+
 .background-animate {
   background-size: 400%;
 

@@ -1,4 +1,10 @@
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMailOpenOutline } from 'react-icons/io5';
+import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+  IoMailOpenOutline,
+} from 'react-icons/io5';
 
 import './header-info.component.scss';
 
@@ -22,21 +28,25 @@ const HeaderInfo: React.FC = () => {
       icon: <IoLogoTwitter size={24} />,
     },
     {
+      url: 'https://www.instagram.com/akbarsaputrait/',
+      icon: <IoLogoInstagram size={24} />,
+    },
+    {
       url: 'mailto:akbarsaputrait@outlook.com',
       icon: <IoMailOpenOutline size={24} />,
     },
   ];
 
   return (
-    <div className='header-info-container'>
+    <div className="header-info-container">
       <div>
-        <p className='font-bold'>Frontend Web Developer</p>
+        <p className="font-bold">Frontend Web Developer</p>
         <p>Since 2019</p>
       </div>
 
-      <div className='social-content'>
+      <div className="social-content">
         {socialMedias.map((soc, index) => (
-          <a href={soc.url} key={index} target='_blank' rel='noreferrer'>
+          <a href={soc.url} key={index} target="_blank" rel="noreferrer">
             {soc.icon}
           </a>
         ))}
