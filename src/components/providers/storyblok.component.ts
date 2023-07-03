@@ -13,6 +13,7 @@ storyblokInit({
   }
 });
 
-export default function StoryblokProvider({ children }: never) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function StoryblokProvider({ children }: any) {
   return children;
 }
