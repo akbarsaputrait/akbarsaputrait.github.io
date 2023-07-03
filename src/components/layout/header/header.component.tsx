@@ -9,10 +9,6 @@ const Header: React.FC = () => {
     },
     {
       path: '',
-      title: 'Journey',
-    },
-    {
-      path: '',
       title: 'Blog',
     },
   ];

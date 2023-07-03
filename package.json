@@ -10,13 +10,14 @@
     "preview": "vite preview",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@storyblok/react": "^2.1.7",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
+    "react-icons": "latest",
     "react-router-dom": "^6.8.1"
   },
   "devDependencies": {

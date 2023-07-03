@@ -2,7 +2,6 @@ import { RouteObject } from 'react-router-dom';
 import PublicLayout from './layouts/public/public.layout';
 import Blog from './pages/blog/blog.page';
 import Home from './pages/home';
-import Journey from './pages/journey/journey.page';
 import ErrorNotFound from './pages/not-found.page';
 
 const routes: RouteObject[] = [
@@ -10,10 +9,6 @@ const routes: RouteObject[] = [
     path: '/',
     element: <PublicLayout component={<Home />} />,
     errorElement: <ErrorNotFound />,
-  },
-  {
-    path: '/journey',
-    element: <PublicLayout component={<Journey />} />,
   },
   {
     path: '/blog',

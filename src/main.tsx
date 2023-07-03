@@ -3,12 +3,15 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 import '@assets/styles/global.scss';
+import StoryblokProvider from './components/providers/storyblok.component';
 
 const Main: React.FC = () => {
   return (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <StoryblokProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StoryblokProvider>
   );
 };
 
