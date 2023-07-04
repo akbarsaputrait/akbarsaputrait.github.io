@@ -20,9 +20,14 @@
     "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.2.0",
     "react-icons": "latest",
-    "react-router-dom": "^6.8.1"
+    "react-markdown": "^8.0.7",
+    "react-router-dom": "^6.8.1",
+    "remark-gfm": "^3.0.1",
+    "storyblok-markdown-richtext": "^1.0.3",
+    "turndown": "^7.1.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

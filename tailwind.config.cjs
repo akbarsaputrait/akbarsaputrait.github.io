@@ -8,5 +8,7 @@ module.exports = {
       serif: ['Playfair Display', 'serif'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
