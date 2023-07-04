@@ -5,10 +5,8 @@ import { HiOutlineClock } from 'react-icons/hi';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { NavLink, useParams } from 'react-router-dom';
 import gfm from 'remark-gfm';
-import TurndownService from 'turndown';
 
 const BlogDetail: React.FC = () => {
-  const turndownService = new TurndownService();
   const { slug } = useParams();
 
   const [data, setData] = useState<ISbStoryData>();
