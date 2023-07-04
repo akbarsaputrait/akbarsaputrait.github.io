@@ -13,7 +13,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@atlaskit/code": "^14.6.4",
     "@storyblok/react": "^2.1.7",
+    "dayjs": "^1.11.9",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.2.0",

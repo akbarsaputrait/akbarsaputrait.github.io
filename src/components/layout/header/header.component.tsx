@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       title: 'Home',
     },
     {
-      path: '',
+      path: '/blog',
       title: 'Blog',
     },
   ];

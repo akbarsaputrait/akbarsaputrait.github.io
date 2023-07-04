@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     const fetch = async () => {
       const storyblokApi = getStoryblokApi();
       const { data } = await storyblokApi.get(`cdn/stories`, {
-        version: 'draft',
+        version: 'published',
         starts_with: 'projects/',
         sort_by: 'created_at:desc',
       });
@@ -26,19 +26,17 @@ const Projects: React.FC = () => {
   if (loading) return <p className="text-center">Loading...</p>;
   if (data) {
     return (
-      <>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {data.map((project) => (
-            <CardProject
-              key={project.uuid}
-              title={project.content.title}
-              industry={project.content.industry}
-              logo={project.content.logo}
-              description={renderRichText(project.content.description)}
-            />
-          ))}
-        </div>
-      </>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {data.map((project) => (
+          <CardProject
+            key={project.uuid}
+            title={project.content.title}
+            industry={project.content.industry}
+            logo={project.content.logo}
+            description={renderRichText(project.content.description)}
+          />
+        ))}
+      </div>
     );
   }
 

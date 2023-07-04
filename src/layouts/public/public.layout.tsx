@@ -10,7 +10,7 @@ interface IPublicLayoutProps {
 const PublicLayout: React.FC<IPublicLayoutProps> = ({ component }) => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="mx-auto sm:max-w-screen-2xl lg:max-w-[1280px] py-8 sm:py-8">
         <Header />
         {component}
         <Footer />
