@@ -3,11 +3,19 @@ import HeaderInfo from '@/components/ui/header-info/header-info.component';
 import HeroName from '@/components/ui/hero-name/hero-name.component';
 
 import Projects from '@/components/contents/projects.component';
+import MetaTag from '@/components/providers/meta.component';
 import './home.page.scss';
+import ProfilePhoto from '/profile.jpeg';
 
 const Home: React.FC = () => {
   return (
     <>
+      <MetaTag
+        title={'Akbar Anung Yudha Saputra'}
+        description={'Portfolio Website of akbarsaputrait'}
+        image={`${window.origin}${ProfilePhoto}`}
+      />
+
       <HeaderInfo />
       <HeroName />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 my-16 items-center">

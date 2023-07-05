@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import BlogCover from '@/components/contents/blog-cover.component';
+import MetaTag from '@/components/providers/meta.component';
 import { ISbStoryData, getStoryblokApi } from '@storyblok/react';
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
@@ -29,6 +30,8 @@ const Blog: React.FC = () => {
   if (data) {
     return (
       <>
+        <MetaTag title={'Blog'} description={'List Articles'} />
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {data.map((item) => (
             <BlogCover
